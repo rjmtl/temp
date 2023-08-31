@@ -1,0 +1,264 @@
+.main_admin{
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    margin: 5vh auto;
+    flex-flow: row wrap;
+
+    /* position: absolute; */
+}
+body.modal-open {
+    height: 100%;
+    /* overflow-y: hidden; */
+  }
+.main_product{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: absolute;
+    opacity: 10;
+    display: none;
+    /* user-select: none;
+    pointer-events: none; */
+    z-index: 2;
+}
+
+.button_main{
+width: 100vw;
+height: 94vh;
+background-color: #f56d6d;
+position: absolute;
+}
+
+.main_buttons{
+width:30%;
+height: 70%;
+margin-left:13%;
+margin-top: 6%;
+background-color: #073b4c;
+color:white;
+font-size: 20px;
+font-weight: 600;
+border-radius: 8px;
+border-width: 4px;
+border-style: solid;
+border-color: white;
+transition: transform .2s;
+cursor: pointer;
+}
+
+.main_buttons:hover{
+    transform: scale(1.07);
+    border-radius: 2%;
+    box-shadow: 0 3px 6px 0 rgba(247, 247, 247, 0.918), 0 4px 15px 0 rgba(255, 255, 255, 0.979);
+}
+
+#file{
+    font-size: 22.3px;
+    border: none;
+    /* display: none; */
+}
+
+.buttons{
+width: 40%;
+height: 40%;
+background-color: #ffd166d7;
+margin-left: 28%;
+margin-top: 10%;
+border-radius: 5px;
+border-width: 4px;
+border-style: solid;
+border-color: rgb(5, 5, 5);
+}
+
+
+
+.main_product.visible{
+    display:block;
+}
+
+.close{
+color:white;
+position:absolute;
+font-size: 40px;
+margin-left: 68%;
+margin-top: 1.5%;
+/* font-weight: 600; */
+cursor: pointer;
+}
+.display_details_price{
+    font-size: 18px;
+    font-weight: 500;
+}
+.display_title{
+font-size: 16px;
+}
+
+.edit_buttons{
+width: 34%;
+height: 12%;
+margin-left: 5%;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+font-weight: 550;
+border:none;
+background-color: rgb(236, 127, 127);
+/* color: white; */
+/* background-color: black; */
+}
+
+.edit_buttons:hover{
+    transform: scale(1.07);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px 0 rgba(247, 247, 247, 0.918), 0 4px 15px 0 rgba(255, 255, 255, 0.979);
+    background-color: rgb(245, 4, 105);
+}
+
+#edit{
+    background-color:#dae450;
+}
+
+#edit:hover{
+background-color: rgb(165, 165, 15);
+}
+
+.Admin_Display{
+width: 25%;
+min-width: 250px;
+max-width: 300px;
+height: 55%;
+background-color: rgb(255, 255, 255);
+margin-top: 3%;
+margin-left: 5%;
+text-align: center;
+transition: transform .2s;
+cursor: pointer;
+z-index: 1;
+/* position: absolute; */
+}
+
+.Admin_Display:hover{
+    transform: scale(1.04);
+    border-radius: 2%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image{
+    width: 90%;
+    height: 50%;
+    padding-top: 7%;
+}
+.label{
+ width: 50%;
+height: 10%;
+padding-left:10%;
+padding-right: 5%;
+margin-top: 2%;
+font-size: 20px;
+font-weight: 600;
+color:#293241;
+}
+
+.add_product{
+width: 40vw;
+height: 60vh;
+margin-left: 28%;
+background-color:#98c1d9;
+margin-top: 5%;
+position: absolute;
+padding-top: 2%;
+/* box-shadow: inset; */
+z-index: 10;
+}
+
+.product_prop{
+    width: 70%;
+    min-height: 8%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-top: 1%;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0fbfc;
+
+
+    /* color: white; */
+}
+
+.product_prop:focus{
+    transform: scale(1.04);
+    border-radius: 2%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.button{
+    background-color: #2287c25b;
+    border-radius: 5px;
+    /* border:none; */
+    width:24%;
+    height: 12%;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 2%;
+    margin-left: 10%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.button:hover{
+    transform: scale(1.04);
+    border-radius: 2%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.floating_desc{
+background-color: rgb(255, 255, 255);
+width: 80%;
+height: 80%;
+position: absolute;
+z-index: 10;
+}
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+  }
+
+  /* Show the snackbar when clicking on a button (class added with JavaScript) */
+  #snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

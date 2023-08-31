@@ -1,0 +1,278 @@
+.login{
+    display:none;
+}
+
+.login.visible{
+    display: block;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    opacity: 10;
+    /* pointer-events: none;
+    user-select: none; */
+
+}
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+
+.signup{
+color:#357CF1;
+border: none;
+background-color: white;
+font-weight: 550;
+margin-top: 20%;
+margin-left: 11%;
+cursor: pointer;
+
+}
+
+.login_main{
+    /* width: 100vw;
+    height: 100vh; */
+    /* z-index: 12;
+    opacity: 10; */
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 34px;
+    border-radius: 3%;
+}
+.admin_login_main{
+    position: absolute;
+    margin-left: 390px;
+    margin-top: 5%;
+    border-radius: 3%;
+}
+.admin_main{
+    display: block;
+    position: absolute;
+    background-color:rgba(245, 156, 156, 0.842);
+    width: 100vw;
+    height: 91vh;
+    opacity: 10;
+}
+.login_signup{
+    width: 40%;
+    height: 65%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    padding-left: 20%;
+     /* border-radius: 2%;     */
+}
+
+.login_visible{
+    display:block;
+}
+
+.login_visible.hidden{
+    display: none;
+}
+
+.signup_visible{
+    display: none;
+}
+
+.signup_visible.visible{
+    display: block;
+}
+
+
+.login_inner{
+    height: 460px;
+    width: 250px;
+    background-color: #2874F0;
+    position: absolute;
+}
+
+.login_console{
+
+    width: 350px;
+    height: 460px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-left: 250px;
+
+
+}
+
+.login_span{
+    color:white;
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 28px;
+    padding-left: 4%;
+    position: absolute;
+
+}
+/* .recommendation{
+    padding-top: 28px;
+    margin-left: -96px;
+    width: 100px;
+    height: 30px;
+} */
+
+.cross{
+    color:white;
+    font-size: 40px;
+    width: 80%;
+    height: 10%;
+    cursor:pointer;
+}
+
+
+
+
+.recommendation_tag{
+position: absolute;
+color:#D0D5DC;
+font-weight: 600;
+width: 147px;
+height: 20px;
+padding-top: 81px;
+text-align: left;
+padding-left: 4%;
+}
+
+.signup_tag{
+position: absolute;
+color:#D0D5DC;
+font-weight: 600;
+width: 147px;
+height: 20px;
+padding-top: 130px;
+text-align: left;
+padding-left: 4%;
+}
+
+.graphic{
+background-size: 251px 160px;
+background-image: url("graphic.png");
+background-position: center;
+background-repeat: no-repeat;
+position: absolute;
+width: 300px;
+height: 130px;
+margin-top: 320px;
+margin-left: -23px;
+}
+
+
+.inner_login_panel{
+width: 100%;
+height: 70%;
+padding-left: 5%;
+padding-top:10%;
+display: block;
+}
+.error{
+    color:red;
+font-size: 12px;
+}
+
+.user_name{
+    /* color: rgb(255, 255, 255);
+    position: absolute;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 5px 40px;
+    margin-left: 72.5%;
+    margin-top: 0.7%;
+    font-size: 16px; */
+    position: absolute;
+    color: #2874f0;
+    font-weight: 600;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 30px;
+    padding-top: 1%;
+    padding: 0px 40px;
+    border: 1px solid #dbdbdb;
+    margin-left: 600px;
+    margin-top: 12px;
+
+}
+
+.inner_login_panel.hidden{
+    display: none;
+}
+
+.inner_signup_panel.visible{
+width: 100%;
+height: 70%;
+padding-left: 5%;
+padding-top:10%;
+display: block;
+/* display: none; */
+
+}
+
+.inner_signup_panel{
+    display: none;
+
+}
+.login_email{
+    margin-top: 5%;
+    width: 90%;
+    height: 8%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+
+
+}
+
+.login_email:focus{
+    outline: none;
+}
+
+.login_password{
+    outline: none;
+
+}
+.login_password{
+    margin-top: 5%;
+    width: 90%;
+    height: 8%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+.no{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+}
+.login_panel_button{
+    width: 80%;
+    height: 15%;
+    background-color: #FB641B;
+    color:#FFFFFF;
+    font-weight: 550;
+    border: none;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.existing_user{
+    width: 80%;
+    height: 15%;
+    background-color: #ffffff;
+    color:rgb(40,116,240);
+    font-weight: 550;
+    margin-top: 4%;
+    margin-left: 5%;
+    border: none;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.tnc{
+    color: #929292;
+    font-size: 10.3px;
+    font-weight: 500
+};
+
